@@ -58,8 +58,8 @@
 
 #### 参考引用
 
-> <a href="http://javascript.ruanyifeng.com/nodejs/express.html" target="_blank">Express</a>
-> <a href="https://github.com/Automattic/node-canvas" target="_blank">Node Canvas - Canvas graphics API backed by Cairo</a>
-> <a href="https://stackoverflow.com/questions/10692075/which-library-should-i-use-for-server-side-image-manipulation-on-node-js/10717592" target="_blank">Which library should I use for server-side image manipulation on Node.JS?</a>
-> <a href="http://stackoverflow.com/questions/22286900/how-do-i-interact-with-this-file-object-in-a-node-js-stream" target="_blank">How do I interact with this <File> object in a node.js stream?</a>
-> <a href="https://github.com/whackashoe/antimoderate" target="_blank">AntiModerate - The progressive image loading library for great good!</a>
+> <a href="http://javascript.ruanyifeng.com/nodejs/express.html" target="_blank">Express</a>  
+> <a href="https://github.com/Automattic/node-canvas" target="_blank">Node Canvas - Canvas graphics API backed by Cairo</a>  
+> <a href="https://stackoverflow.com/questions/10692075/which-library-should-i-use-for-server-side-image-manipulation-on-node-js/10717592" target="_blank">Which library should I use for server-side image manipulation on Node.JS?</a>  
+> <a href="http://stackoverflow.com/questions/22286900/how-do-i-interact-with-this-file-object-in-a-node-js-stream" target="_blank">How do I interact with this <File> object in a node.js stream?</a>  
+> <a href="https://github.com/whackashoe/antimoderate" target="_blank">AntiModerate - The progressive image loading library for great good!</a>  
