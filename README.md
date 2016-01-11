@@ -1,10 +1,8 @@
-# Image Processing
-
-基于 Node 的图像处理服务.
+# 基于 Node 的图像处理服务
 
 #### 项目地址
 
-<https://github.com/songxc/image-processing>
+<https://github.com/songxc/image-proc-cairo>
 
 #### 示例 Demo
 
@@ -46,7 +44,7 @@
 #### 安装 Node Canvas
 
 1. 安装 [Cairo](http://cairographics.org/)：``brew install pkg-config cairo libpng jpeg giflib``（For Mac）
-2. 安装 [canvas](https://www.npmjs.com/package/canvas)：``npm install canvas``
+2. 安装 [Canvas](https://www.npmjs.com/package/canvas)：``npm install canvas``
 
 #### 安装依赖
 
