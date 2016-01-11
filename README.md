@@ -8,7 +8,8 @@
 
 #### 示例 Demo
 
-部署成功后访问：<http://127.0.0.1:3000/demo/blur/index.html>
+部署成功后访问: <http://127.0.0.1:3000/demo/blur/index.html>  
+另外提供一个生成小工具: <http://127.0.0.1:3000/demo/blur/tool.html>
 
 #### API
 
@@ -31,7 +32,7 @@
 #### 初始化 Express
 
 1. 安装 [express](http://expressjs.com/zh/)：``npm install express --save``
-2. 安装 express-generator：``npm install express-generator -g``
+2. 安装 [express-generator](https://www.npmjs.com/package/express-generator)：``npm install express-generator -g``
 3. 安装 [yeoman](http://yeoman.io/)：``npm install yo -g``
 4. 安装 [nodemon](https://www.npmjs.com/package/nodemon)：``npm install nodemon -g``
 5. 初始化项目：``yo express``
