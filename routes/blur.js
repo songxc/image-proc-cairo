@@ -1,5 +1,6 @@
 var Express = require('express');
 var Router = Express.Router();
+var Del = require('delete');
 var ModGenThumb = require('../mods/blur/index');
 var MyDownload = require('../common/download');
 
@@ -38,9 +39,9 @@ Router.get('/', function(req, res) {
   
   // 下载图片
   MyDownload.downloadFiles(paramSrc)
-    .then(function(files) {
+    .then(function(filePath) {
       // 处理图片
-      ModGenThumb.processImage(files[0]['_contents'], size, radius)
+      ModGenThumb.processImage(filePath, size, radius)
         .then(function(imgDataURL) {
           // 输出到客户端
           res.render('blur', {
@@ -54,6 +55,10 @@ Router.get('/', function(req, res) {
               imgDataURL: imgDataURL
             }
           });
+          // 删除图片
+          Del(filePath, function(err) {
+            if (err) throw err;
+          });
         })
         .catch(function(err) {
           res.render('blur', {
@@ -61,12 +66,16 @@ Router.get('/', function(req, res) {
             callback: paramCallback,
             data: {
               success: false,
-              message: '下载图片时出错',
+              message: '处理图片时出错',
               errMessage: err.message,
               src: paramSrc,
               size: size,
               radius: radius
             }
+          });
+          // 删除图片
+          Del(filePath, function(err) {
+            if (err) throw err;
           });
         });
     })
@@ -76,7 +85,7 @@ Router.get('/', function(req, res) {
         callback: paramCallback,
         data: {
           success: false,
-          message: '传入的图片地址无效',
+          message: '下载图片时出错',
           errMessage: err.message,
           src: paramSrc,
           size: size,

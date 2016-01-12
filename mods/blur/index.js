@@ -3,6 +3,7 @@
  * 图像虚化算法
  * 参考: https://github.com/whackashoe/antimoderate
  */
+var fs = require('fs');
 var Promise = require('bluebird');
 var Canvas = require('canvas');
 var Image = Canvas.Image;
@@ -17,12 +18,11 @@ var am = {
 
   /**
    * 处理图片
-   * @param imgData
-   * @param imgSrc
+   * @param imgPath
    * @param size
    * @param radius
    */
-  processImage: function(imgData, size, radius) {
+  processImage: function(imgPath, size, radius) {
 
     return new Promise(function(resolve, reject) {
 
@@ -249,8 +249,12 @@ var am = {
         reject(err);
       };
 
-      // 图片地址
-      originImg.src = imgData;
+      try {
+        // 图片地址
+        originImg.src = fs.readFileSync(imgPath);
+      } catch (err) {
+        reject(err);
+      }
     });
   }
 };
