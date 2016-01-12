@@ -6,7 +6,7 @@
 var Promise = require('bluebird');
 var Canvas = require('canvas');
 var Image = Canvas.Image;
-var ModUtils = require('../common/utils');
+var MyUtils = require('../../common/utils');
 
 var am = {
   mul_table: [
@@ -32,7 +32,7 @@ var am = {
       originImg.onload = function() {
 
         // 原图尺寸
-        var compressedSizeObj = ModUtils.genCompressedImgSize(originImg.width, originImg.height, size, size);
+        var compressedSizeObj = MyUtils.genCompressedImgSize(originImg.width, originImg.height, size, size);
 
         // 压缩后图片宽高
         var w = compressedSizeObj.width;

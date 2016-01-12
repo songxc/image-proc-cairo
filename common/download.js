@@ -25,7 +25,7 @@ module.exports = {
       }
 
       // 下载路径
-      destDir = destDir || Path.join(__dirname, '../../download');
+      destDir = destDir || Path.join(__dirname, '../download');
 
       // 下载图片
       new Download({mode: '755'})
@@ -39,7 +39,7 @@ module.exports = {
           if (isDelAfterDownload) {
             // 文件名
             var fileName = files[0]['relative'];
-            var filePath = Path.join(__dirname, '../../download/' + fileName);
+            var filePath = Path.join(__dirname, '../download/' + fileName);
             // 删除图片
             Del.promise(filePath)
               .then(function() {
