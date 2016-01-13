@@ -1,5 +1,7 @@
 # Image Placeholder Generator
 
+![Image Placeholder Tool](http://songxc.github.io/images/image-placeholder-tool.jpg)
+
 ## Introduction
 
 #### Dependencies
@@ -24,7 +26,7 @@ Visit after start service.
         {String} src: input image url;
         {Integer} size: output image size. default: 30, maximum: 100;
         {Integer} radius: output image blur strength, bigger leads to more blurry. default: 1, maximum: 20;
-    data:
+    result:
         {Boolean} success: status;
         {String} message: status message;
         {String} errMessage: error message;
