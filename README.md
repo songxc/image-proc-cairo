@@ -1,6 +1,6 @@
-# Image Placeholder Generator
+# Image Placeholder Generator Base on Cairo
 
-![Image Placeholder Tool](http://songxc.github.io/images/image-placeholder-tool.jpg)
+![Image Placeholder Tool](http://songxc.github.io/images/image-placeholder-tool-cairo.jpg)
 
 ## Introduction
 
